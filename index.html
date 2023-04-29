@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shapes calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Shapes calculator</h1>
+      </header>
+      <main class="main">
+        <section class="section section_rectangle">
+          <div class="section_img">
+            <div class="section_header">RECTANGLE</div>
+            <img src="./img/rectangle.png" alt="rectangle" width="50px" />
+          </div>
+          <article class="section_size">
+            <div class="section_height">
+              <div class="section_label">Height</div>
+              <div class="section_height_input">
+                <input type="number" class="height section_user_input" />
+              </div>
+            </div>
+            <div class="section_width">
+              <div class="section_label">Width</div>
+              <div class="section_width_input">
+                <input type="number" class="width section_user_input" />
+              </div>
+            </div>
+            <button type="submit" class="btn">Results</button>
+          </article>
+          <article class="section_area">
+            <div class="section_area_label">Area</div>
+            <div class="section_area_input">
+              <input
+                type="number"
+                class="rectangle_area section_read"
+                readonly
+              />
+            </div>
+          </article>
+          <article class="section_perimeter">
+            <div class="section_perimeter_label">Perimeter</div>
+            <div class="section_perimeter_input">
+              <input
+                type="number"
+                class="rectangle_perimeter section_read"
+                readonly
+              />
+            </div>
+          </article>
+        </section>
+
+        <section class="section section_square">
+          <div class="section_img">
+            <div class="section_header">SQUARE</div>
+            <img src="./img/square.png" alt="square" width="50px" />
+          </div>
+          <article class="section_size">
+            <div class="section_label">Side length</div>
+            <div class="section_side_input">
+              <input type="number" class="side section_user_input" />
+            </div>
+          </article>
+          <article class="section_area">
+            <div class="section_area_label">Area</div>
+            <div class="section_area_input">
+              <input type="number" class="square_area section_read" readonly />
+            </div>
+          </article>
+          <article class="section_perimeter">
+            <div class="section_perimeter_label">Perimeter</div>
+            <div class="section_perimeter_input">
+              <input
+                type="number"
+                class="square_perimeter section_read"
+                readonly
+              />
+            </div>
+          </article>
+        </section>
+
+        <section class="section section_circle">
+          <div class="section_img">
+            <div class="section_header">CIRCLE</div>
+            <img src="./img/circle.png" alt="circle" width="50px" />
+          </div>
+          <article class="section_size">
+            <div class="section_label">Radius</div>
+            <div class="section_radius_input">
+              <input type="number" class="radius section_user_input" />
+            </div>
+          </article>
+          <article class="section_area">
+            <div class="section_area_label">Area</div>
+            <div class="section_area_input">
+              <input type="number" class="circle_area section_read" readonly />
+            </div>
+          </article>
+          <article class="section_perimeter">
+            <div class="section_perimeter_label">Perimeter</div>
+            <div class="section_perimeter_input">
+              <input
+                type="number"
+                class="circle_perimeter section_read"
+                readonly
+              />
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <!-- JS file -->
+    <script src="./main.js"></script>
+  </body>
+</html>
