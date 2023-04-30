@@ -21,6 +21,15 @@ body {
   height: 100vh;
   font-family: "Inter", sans-serif;
   color: #2d3a3a;
+  @media (max-width: 500px) {
+    height: 100%;
+  }
+}
+.header {
+  @media (max-width: 500px) {
+    height: 90px;
+    width: 60%;
+  }
 }
 
 .btn {
@@ -37,12 +46,20 @@ body {
 
 .container {
   background-color: $light-blue;
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .header {
   text-align: center;
   text-transform: uppercase;
   color: white;
+  @media (max-width: 500px) {
+    padding-top: 5px;
+  }
 }
 
 .main {
@@ -51,12 +68,22 @@ body {
   width: 500px;
   height: 100%;
   margin-bottom: 6px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+  }
 }
 
 .section {
   padding: 4px;
   background-color: white;
   height: 90%;
+  @media (max-width: 500px) {
+    width: 90%;
+    margin-bottom: 20px;
+  }
   &_header {
     margin: 3px 0;
     text-align: center;
@@ -77,6 +104,13 @@ body {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 500px) {
+      align-items: center;
+      background-repeat: repeat;
+      background-size: 150px;
+      margin-bottom: 40px;
+    }
   }
   &_label {
     font-size: 0.8rem;
@@ -91,7 +125,13 @@ body {
     background-color: $light-green;
     border: 2px solid $green;
     border-radius: 2px;
-    height: 22px;
+    height: 25px;
     padding-left: 5px;
+  }
+  &_results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
   }
 }

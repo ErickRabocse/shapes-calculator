@@ -14,6 +14,18 @@ body {
   font-family: "Inter", sans-serif;
   color: #2d3a3a;
 }
+@media (max-width: 500px) {
+  body {
+    height: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    height: 90px;
+    width: 60%;
+  }
+}
 
 .btn {
   margin-top: 10px;
@@ -30,11 +42,23 @@ body {
 .container {
   background-color: #a5c4d4;
 }
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .header {
   text-align: center;
   text-transform: uppercase;
   color: white;
+}
+@media (max-width: 500px) {
+  .header {
+    padding-top: 5px;
+  }
 }
 
 .main {
@@ -44,11 +68,25 @@ body {
   height: 100%;
   margin-bottom: 6px;
 }
+@media (max-width: 500px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+}
 
 .section {
   padding: 4px;
   background-color: white;
   height: 90%;
+}
+@media (max-width: 500px) {
+  .section {
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }
 .section_header {
   margin: 3px 0;
@@ -71,6 +109,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .section_size {
+    align-items: center;
+    background-repeat: repeat;
+    background-size: 150px;
+    margin-bottom: 40px;
+  }
+}
 .section_label {
   font-size: 0.8rem;
   padding: 5px 0;
@@ -84,6 +130,12 @@ body {
   background-color: rgba(43, 168, 74, 0.1254901961);
   border: 2px solid #2ba84a;
   border-radius: 2px;
-  height: 22px;
+  height: 25px;
   padding-left: 5px;
+}
+.section_results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
 }

@@ -1,7 +1,6 @@
 {
   "name": "area_perimetro",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
     "compile": "sass --watch --no-source-map style.scss style.css"
@@ -10,5 +9,15 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.62.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickRabocse/shapes-calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ErickRabocse/shapes-calculator/issues"
+  },
+  "homepage": "https://github.com/ErickRabocse/shapes-calculator#readme",
+  "description": ""
 }
